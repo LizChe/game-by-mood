@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.codecool.picture-by-mood</groupId>
-  <artifactId>picture-by-mood</artifactId>
+  <groupId>com.codecool.game-by-mood</groupId>
+  <artifactId>game-by-mood</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>picture-by-mood Maven Webapp</name>
+  <name>game-by-mood Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -27,7 +27,7 @@
   </dependencies>
 
   <build>
-    <finalName>picture-by-mood</finalName>
+    <finalName>game-by-mood</finalName>
 
     <plugins>
 
