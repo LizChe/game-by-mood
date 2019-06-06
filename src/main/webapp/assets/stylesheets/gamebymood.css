@@ -106,6 +106,7 @@ h1, h2, h3, h4 {
 .submit-button input {
     background-color: rgba(134, 170, 2, 0.81);
     outline: none;
+    cursor: pointer;
 }
 
 .submit-button input:hover {
