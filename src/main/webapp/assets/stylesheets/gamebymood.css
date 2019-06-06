@@ -1,0 +1,114 @@
+/* Reset default layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML and Body */
+
+html, body {
+    height: 100%;
+    z-index: 1;
+}
+
+/* Background */
+
+#background-image {
+    background-image: url("../images/background/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+/* Centering */
+
+.primary-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Headers */
+
+h1, h2, h3, h4 {
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Title container */
+
+.title-container {
+    border-bottom: 2px solid #e1e3e2;
+    border-radius: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    color: #1179ae;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e1e3e2;
+}
+
+/* Mood selection section */
+
+.mood-selection-container {
+    display: flex;
+    justify-content: center;
+}
+
+.radio-button,
+.submit-button {
+    padding: 5%;
+}
+
+.radio-button label {
+    color: #e1e3e2;
+    cursor: pointer;
+}
+
+/* Style radio boxes */
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-button label,
+.submit-button input {
+    background-color: rgba(117, 117, 117, 0.55);
+    color: #eeeeee;
+    padding: 5%;
+    text-align: center;
+    display: block;
+    width: 250px;
+}
+
+.radio-button label:hover {
+    background-color: rgba(228, 179, 42, 0.85);
+    color: #e1e3e2;
+}
+
+.radio-button input[type="radio"]:checked + label {
+    background-color: rgba(214, 41, 34, 0.86);
+    color: #e1e3e2;
+}
+
+/* Submit button */
+
+.submit-button input {
+    background-color: rgba(134, 170, 2, 0.81);
+    outline: none;
+    cursor: pointer;
+}
+
+.submit-button input:hover {
+    background-color: rgba(136, 130, 106, 0.81);
+}
