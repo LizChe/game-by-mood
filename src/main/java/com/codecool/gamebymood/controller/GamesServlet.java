@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.codecool.gamebymood.model.GamesContainer;
 
-@WebServlet(name = "gameByMood", urlPatterns = {"/gamebymood"})
+@WebServlet(name = "gameByMood", urlPatterns = {"/gamebymood/*"})
 public class GamesServlet extends HttpServlet {
 
     private GamesContainer gamesContainer = new GamesContainer();
@@ -26,15 +26,6 @@ public class GamesServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String mood = request.getParameter("mood");
         Map<String, String> games = gamesContainer.getGames();
-
-        if (mood == null) {
-            response.sendRedirect(games.get("no choice"));
-        }
-
-        for (Map.Entry<String, String> entry: games.entrySet()) {
-            if (entry.getKey().equals(mood)) {
-                response.sendRedirect(entry.getValue());
-            }
-        }
+        response.sendRedirect(games.getOrDefault(mood, "no choice"));
     }
 }
